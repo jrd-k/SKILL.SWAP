@@ -1,11 +1,14 @@
 import { useEffect, useState } from 'react';
 import SkillCard from './skillCard.jsx';
-import './SkillList.css'; // This path must match the actual file location
+import './SkillList.css';
+
+const API_URL = import.meta.env.VITE_API_URL;
+
 export default function SkillList() {
   const [skills, setSkills] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/skills')
+    fetch(`${API_URL}/skills`)
       .then(res => res.json())
       .then(data => setSkills(data));
   }, []);

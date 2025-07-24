@@ -1,23 +1,24 @@
 import { useEffect, useState } from 'react';
-import './Dashboard.css'; // This path must match the actual file location
+import './Dashboard.css'; // Make sure this path is correct
 
 export default function Dashboard() {
   const [skills, setSkills] = useState([]);
+  const API_URL = import.meta.env.VITE_API_URL; // Defined once
 
   useEffect(() => {
-    fetch('http://localhost:3000/skills')
+    fetch(`${API_URL}/skills`)
       .then(res => res.json())
       .then(data => setSkills(data.filter(skill => skill.owner === 'me')));
   }, []);
 
   function handleDelete(id) {
-    fetch(`http://localhost:3000/skills/${id}`, {
+    fetch(`${API_URL}/skills/${id}`, {
       method: 'DELETE',
     }).then(() => setSkills(skills.filter(skill => skill.id !== id)));
   }
 
   function handleFavorite(id, currentFavorite) {
-    fetch(`http://localhost:3000/skills/${id}`, {
+    fetch(`${API_URL}/skills/${id}`, {
       method: 'PATCH',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ favorite: !currentFavorite }),

@@ -20,7 +20,8 @@ export default function AddSkillForm() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    fetch('http://localhost:3000/skills', {
+   const API_URL = import.meta.env.VITE_API_URL;
+fetch(`${API_URL}/skills` , {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData),

@@ -5,8 +5,10 @@ export default function SkillDetail() {
   const { id } = useParams();
   const [skill, setSkill] = useState(null);
 
+  const API_URL = import.meta.env.VITE_API_URL;
+
   useEffect(() => {
-    fetch(`http://localhost:3000/skills/${id}`)
+    fetch(`${API_URL}/skills/${id}`)
       .then(res => res.json())
       .then(data => setSkill(data));
   }, [id]);
