@@ -9,7 +9,21 @@
   justify-content: center;
   text-align: center;
 }
-
+.hehe {
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  background-color: black;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+    
+}
 .init {
   background-color: #3b82f6; /* Tailwind blue-500 */
   color: white;
