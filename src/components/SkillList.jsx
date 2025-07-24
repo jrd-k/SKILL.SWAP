@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import SkillCard from './SkillCard';
+import SkillCard from './skillCard.jsx';
 import './SkillList.css'; // This path must match the actual file location
 export default function SkillList() {
   const [skills, setSkills] = useState([]);
