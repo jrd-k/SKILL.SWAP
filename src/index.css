@@ -1,68 +1,77 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+{
+  "skills": [
+    {
+      "id": "1",
+      "name": "Guitar Lessons",
+      "level": "Intermediate",
+      "location": "Nairobi",
+      "description": "Learn to play chords and popular songs.",
+      "owner": "Alice",
+      "favorite": false
+    },
+    {
+      "id": "2",
+      "name": "Web Development",
+      "level": "Advanced",
+      "location": "Eldoret",
+      "description": "I can help you build websites with React and Node.js.",
+      "owner": "Bob",
+      "favorite": true
+    },
+    {
+      "id": "3",
+      "name": "Swahili Language",
+      "level": "Beginner",
+      "location": "Mombasa",
+      "description": "Let's practice conversational Swahili together.",
+      "owner": "Carol",
+      "favorite": false
+    },
+    {
+      "id": "4",
+      "name": "Cooking Kenyan Dishes",
+      "level": "Intermediate",
+      "location": "Kisumu",
+      "description": "Learn how to cook ugali, sukuma wiki, and nyama choma.",
+      "owner": "Daniel",
+      "favorite": true
+    },
+    {
+      "id": "d48d",
+      "name": "",
+      "level": "",
+      "location": "",
+      "description": "",
+      "owner": "me",
+      "favorite": false
+    },
+    {
+      "id": "ccb0",
+      "name": "",
+      "level": "",
+      "location": "",
+      "description": "",
+      "owner": "me",
+      "favorite": false
+    },
+    {
+      "id": "a24c",
+      "name": "",
+      "level": "",
+      "location": "",
+      "description": "",
+      "owner": "me",
+      "favorite": false
+    },
+    {
+      "id": "2943",
+      "name": "civil engieneer",
+      "level": "Expert",
+      "location": "covo",
+      "description": "dangerous man",
+      "owner": "me",
+      "favorite": false
+    }
+  ],
+  "users": []
 }

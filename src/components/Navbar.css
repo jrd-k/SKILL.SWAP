@@ -1,0 +1,48 @@
+/* Make navbar full width */
+.navbar {
+  width: 100vw;
+  background-color: #3b82f6; /* Tailwind blue-500 */
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 0.5rem 0.5rem 0 0;
+  overflow: hidden;
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
+/* Link styles */
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:first-child {
+  border-left: none;
+}
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0.25rem;
+}
+
+.navlink {
+  color: white;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+  transition: background 0.3s, color 0.3s;
+}
+
+.navlink:last-child {
+  border-right: none;
+}
+
+.navlink:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
