@@ -1,77 +1,42 @@
-{
-  "skills": [
-    {
-      "id": "1",
-      "name": "Guitar Lessons",
-      "level": "Intermediate",
-      "location": "Nairobi",
-      "description": "Learn to play chords and popular songs.",
-      "owner": "Alice",
-      "favorite": false
-    },
-    {
-      "id": "2",
-      "name": "Web Development",
-      "level": "Advanced",
-      "location": "Eldoret",
-      "description": "I can help you build websites with React and Node.js.",
-      "owner": "Bob",
-      "favorite": true
-    },
-    {
-      "id": "3",
-      "name": "Swahili Language",
-      "level": "Beginner",
-      "location": "Mombasa",
-      "description": "Let's practice conversational Swahili together.",
-      "owner": "Carol",
-      "favorite": false
-    },
-    {
-      "id": "4",
-      "name": "Cooking Kenyan Dishes",
-      "level": "Intermediate",
-      "location": "Kisumu",
-      "description": "Learn how to cook ugali, sukuma wiki, and nyama choma.",
-      "owner": "Daniel",
-      "favorite": true
-    },
-    {
-      "id": "d48d",
-      "name": "",
-      "level": "",
-      "location": "",
-      "description": "",
-      "owner": "me",
-      "favorite": false
-    },
-    {
-      "id": "ccb0",
-      "name": "",
-      "level": "",
-      "location": "",
-      "description": "",
-      "owner": "me",
-      "favorite": false
-    },
-    {
-      "id": "a24c",
-      "name": "",
-      "level": "",
-      "location": "",
-      "description": "",
-      "owner": "me",
-      "favorite": false
-    },
-    {
-      "id": "2943",
-      "name": "civil engieneer",
-      "level": "Expert",
-      "location": "covo",
-      "description": "dangerous man",
-      "owner": "me",
-      "favorite": false
-    }
-  ],
-  "users": []
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
 }
